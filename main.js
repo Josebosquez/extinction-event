@@ -21,15 +21,15 @@ const dinos = document.querySelectorAll("#row");
 for (const img of dinos){
     img.addEventListener("click", function (event){
         const elementThatWasClicked = event.target;
-        elementThatWasClicked.style.width = "0"
-    })
+        elementThatWasClicked.style.width = "0";
+    });
 }
 
 const butt = document.querySelector("#destroy-all");
 
 function doSomething(){
     for (const img of dinos){
-        img.style.width = "0px";
+        img.style.width = "0";
     };
 
     for (const ul of opac){

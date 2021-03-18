@@ -17,3 +17,14 @@ for (const ul of opac){
         elementThatWasClicked.style.opacity = "0";
     });
 } 
+
+const dinos = document.querySelectorAll("#row");
+
+for (const img of dinos){
+    img.addEventListener("click", function (event) {
+        console.log(event);
+        const elementThatWasClicked = event.target;
+        elementThatWasClicked.style.opacity = "0"
+    })
+}
+
